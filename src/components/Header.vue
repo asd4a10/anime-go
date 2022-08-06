@@ -1,5 +1,5 @@
 <template>
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-secondary">
     <div class="container">
       <a class="navbar-brand" href="#">Anime Go</a>
       <button
@@ -7,7 +7,7 @@
         type="button"
         data-bs-toggle="collapse"
         data-bs-target="#navbarColor01"
-        aria-controls="navbarColor01"
+        aria-controls="navbarColor01" 
         aria-expanded="false"
         aria-label="Toggle navigation"
       >
@@ -21,7 +21,6 @@
           <li class="nav-item">
             <router-link class="nav-link" to="/anime-list">Anime</router-link>
           </li>
-          <li class="nav-item">asd</li>
         </ul>
         <form class="d-flex">
           <input

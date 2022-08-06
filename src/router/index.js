@@ -1,6 +1,8 @@
-import { createRouter, createWebHistory } from 'vue-router'
-import Home from '@/views/Home.vue'
-import AnimeList from '@/views/AnimeList.vue'
+import { createRouter, createWebHistory } from 'vue-router';
+import Home from '@/views/Home.vue';
+import AnimeList from '@/views/AnimeList.vue';
+import AnimeMain from "@/views/AnimeMain.vue";
+import AnimeEpisode from "@/views/AnimeEpisode.vue";
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -13,11 +15,18 @@ const router = createRouter({
     {
       path: '/anime-list',
       name: 'anime-list',
-      // route level code-splitting
-      // this generates a separate chunk (About.[hash].js) for this route
-      // which is lazy-loaded when the route is visited.
       component: AnimeList
-    }
+    },
+    {
+      path: '/anime/:id', 
+      name: 'show-anime', 
+      component: AnimeMain
+    },
+    {
+      path: '/anime/:id/episode/:ep', 
+      name: 'show-anime-episode', 
+      component: AnimeEpisode
+    },
   ]
 })
 

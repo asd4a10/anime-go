@@ -1,7 +1,8 @@
 <template>
-  <Header />
-  <br />
-  <RouterView />
+  <div class="h-100">
+    <Header />
+    <RouterView />
+  </div>
 </template>
 
 <script setup>
